@@ -4,12 +4,12 @@
 
 ## 功能特性
 
-- ✅ **待办事项管理**：添加、标记完成、删除任务
-- 📝 **励志语录**：从网络API获取随机励志语录，支持一键刷新
-- 💾 **本地存储**：使用SharedPreferences持久化保存任务数据
-- 🌐 **网络请求**：使用OkHttp进行网络请求获取语录
-- 🎨 **Material Design**：采用Material Design设计规范，界面美观现代
-- ⚡ **性能优化**：使用RecyclerView实现流畅列表滚动，无资源泄露
+-  **待办事项管理**：添加、标记完成、删除任务
+-  **励志语录**：从网络API获取随机励志语录，支持一键刷新
+-  **本地存储**：使用SharedPreferences持久化保存任务数据
+-  **网络请求**：使用OkHttp进行网络请求获取语录
+-  **Material Design**：采用Material Design设计规范，界面美观现代
+-  **性能优化**：使用RecyclerView实现流畅列表滚动，无资源泄露
 
 ## 技术栈
 
@@ -21,34 +21,6 @@
 - **最低SDK版本**：24 (Android 7.0)
 - **目标SDK版本**：34 (Android 14)
 
-## 项目结构
-
-```
-app/
-├── src/main/
-│   ├── java/com/minifocusboard/
-│   │   ├── MainActivity.kt          # 主Activity，包含业务逻辑
-│   │   └── TaskAdapter.kt           # RecyclerView适配器
-│   ├── res/
-│   │   ├── layout/
-│   │   │   ├── activity_main.xml    # 主界面布局
-│   │   │   └── item_task.xml        # 任务项布局
-│   │   ├── values/
-│   │   │   ├── strings.xml          # 字符串资源
-│   │   │   ├── colors.xml           # 颜色资源
-│   │   │   └── themes.xml           # 主题样式
-│   │   └── xml/
-│   │       ├── backup_rules.xml     # 备份规则
-│   │       └── data_extraction_rules.xml
-│   └── AndroidManifest.xml          # 应用清单文件
-├── build.gradle.kts                 # 应用级构建配置
-└── proguard-rules.pro               # ProGuard规则
-
-build.gradle.kts                     # 项目级构建配置
-settings.gradle.kts                  # Gradle设置
-gradle.properties                    # Gradle属性
-```
-
 ## 构建和运行
 
 ### 前置要求
@@ -57,26 +29,13 @@ gradle.properties                    # Gradle属性
 - JDK 8 或更高版本
 - Android SDK (API 24+)
 
-### 构建步骤
+### 使用
 
 1. 克隆或下载项目到本地
 2. 使用Android Studio打开项目
 3. 等待Gradle同步完成
 4. 连接Android设备或启动模拟器
 5. 点击运行按钮或使用快捷键 `Shift+F10`
-
-### 使用Gradle命令行构建
-
-```bash
-# 构建Debug版本
-./gradlew assembleDebug
-
-# 构建Release版本
-./gradlew assembleRelease
-
-# 安装到设备
-./gradlew installDebug
-```
 
 ## 技术实现要点
 
@@ -97,12 +56,6 @@ gradle.properties                    # Gradle属性
 - ViewBinding减少findViewById调用，提升性能
 - 正确管理OkHttp Client生命周期，防止内存泄露
 - 使用Lifecycle感知组件，避免在Activity销毁后执行操作
-
-## 提交要求
-
-1. **产品报告**：见 `Product_Report.md`
-2. **源代码**：已准备好提交到GitHub/Gitee
-3. **演示录屏**：需要录制应用使用视频（mkv, mp4, avi, rm, rmvb格式）
 
 ## 许可证
 
