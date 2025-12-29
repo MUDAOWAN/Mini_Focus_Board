@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Mini Focus Board</string>
+    <string name="refresh_quote">刷新语录</string>
+    <string name="add_task">添加任务</string>
+    <string name="task_hint">输入任务内容…</string>
+    <string name="your_tasks">你的任务</string>
+    <string name="loading_quote">加载中…</string>
+    <string name="quote_fetching">获取中…</string>
+    <string name="quote_updated">已更新</string>
+    <string name="quote_error">网络错误，显示上次语录</string>
+    <string name="delete_task">删除任务</string>
+    <string name="task_count">%1$d 个任务</string>
+</resources>
+
